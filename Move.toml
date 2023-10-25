@@ -1,0 +1,22 @@
+[package]
+name = "ecc-move"
+version = "1.0.0"
+authors = []
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+movefuns = "0x2"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies]
+movefuns = { git = "https://github.com/movefuns/movefuns.git", subdir = "aptos", rev = "main" }
+
+[dev-dependencies]
